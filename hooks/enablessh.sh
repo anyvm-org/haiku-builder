@@ -11,9 +11,13 @@ vncdo key right
 vncdo key right
 
 vncdotool key super-alt-t
-sleep 2;
+sleep 5;
 
-vncdotool key super-alt-t
+while ! bash ./vbox.sh screenText haiku | grep "Welcome to the Haiku shell"; do
+  vncdotool key super-alt-t
+  sleep 3;
+done
+
 
 sleep 30;
 

@@ -2,10 +2,17 @@
 
 bash ./vbox.sh  pauseVNC
 
+
 vncdo key right
 vncdo key right
 
 sleep 60;
+
+vncdo move 200 200 click 1
+
+sleep 5;
+
+vncdo move 300 300 click 1
 
 vncdo key right
 vncdo key right

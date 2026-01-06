@@ -1,8 +1,22 @@
 
 
-Please select your preferred language | tab; tab; space; sleep 2; tab; tab; space; sleep 2;      tab; tab; space; sleep 2;  up; space;    tab;tab;tab; space;   sleep 120; space;
+Please select your preferred language | sleep 5; tab; tab; tab; space;
 
+Trash |  sleep 5; vncdotool key super-alt-t; sleep 5;
 
+Welcome to the Haiku shell | sleep 5; string "mkfs -t bfs /dev/disk/virtual/virtio_block/0/raw anyvm.org" ; sleep 2; enter;
+
+Continue | sleep 2; string yes; enter;
+
+executing job | sleep 30;
+
+esktop> | sleep 10; string Installer; enter;
+
+Welcome to the Haiku Installer | sleep 5; tab; tab; space; 
+
+Please choose target | sleep 2; tab; tab; space; sleep 2;   up; space;  tab;tab;tab; space;  
+
+Quit | space; sleep 20; string shutdown; sleep 10; enter;
 
 
    

@@ -8,6 +8,24 @@ Latest: v2.0.0
 The image builder for `haiku`
 
 
+All the supported releases are here:
+
+
+
+| Release | x86_64   |
+|---------|----------|
+| r1beta5 |  ✅     |
+
+
+
+
+
+
+
+
+
+
+
 How to use:
 
 1. Use the [manual.yml](.github/workflows/manual.yml) to build manually.

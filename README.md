@@ -39,6 +39,6 @@ How to build:
 
     Just clone the repo. and run:
     ```bash
-    bash build.sh conf/haiku-r1beta5.conf
+    python3 build.py conf/haiku-r1beta5.conf
     ```
    

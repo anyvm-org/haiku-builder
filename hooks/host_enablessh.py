@@ -1,9 +1,9 @@
 # Drive Haiku's GUI to open a terminal, then paste enablessh.local into it.
 #
 # Host-side hook: exec()'d into build.py's globals so it can call pauseVNC(),
-# vncKey() / vncMoveClick(), _screen_text_value(), inputFile(), the `osname`
-# pipeline global, and time.sleep() directly. No subprocess to vncdotool here
-# -- the vnc* helpers live in build.py.
+# vncKey() / vncMoveClick(), screenTextValue(), inputFile(), time.sleep()
+# directly. None of these take an osname argument any more -- they all read
+# VM_OS_NAME from the environment.
 
 # Pause the background screen-capture loop -- we are about to drive the GUI
 # ourselves and don't want OCR fighting us for the VNC port.
@@ -29,13 +29,13 @@ vncKey("right")
 vncKey("super-alt-t")
 time.sleep(5)
 
-while "Welcome to the Haiku shell" not in _screen_text_value(osname):
+while "Welcome to the Haiku shell" not in screenTextValue():
     vncKey("super-alt-t")
     time.sleep(3)
 
 time.sleep(30)
 
 # Paste enablessh.local into the terminal via vncdotool typefile.
-inputFile(osname, "enablessh.local")
+inputFile("enablessh.local")
 
 time.sleep(30)

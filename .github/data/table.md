@@ -2,7 +2,7 @@
 
 | Release | x86_64   |
 |---------|----------|
-| r1beta5 |  ✅ (rsync,scp,nfs)     |
+| r1beta5 |  ✅ (rsync,scp,nfs,sshfs)     |
 
 
 

@@ -1,9 +1,3 @@
-
-
-| Release | x86_64 |
-|---------|---------|
-| r1beta5 | ✅ (rsync,scp,nfs,sshfs,tar) |
-
 How the images are built:
 
 Each image is built automatically in the

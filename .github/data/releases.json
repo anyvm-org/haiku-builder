@@ -2,6 +2,15 @@
   "os": "haiku",
   "releases": [
     {
+      "tag": "r1beta5",
+      "release": "r1beta5",
+      "arch": "x86_64",
+      "sync": "rsync,scp,nfs,sshfs,tar",
+      "shutdown": "shutdown -q",
+      "desktop": false,
+      "build": false
+    },
+    {
       "tag": "r1beta6",
       "release": "r1beta6",
       "arch": "x86_64",

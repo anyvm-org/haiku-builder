@@ -3,6 +3,7 @@
 | Release | x86_64 |
 |---------|---------|
 | r1beta6 | ✅ (rsync,scp,nfs,sshfs,tar) |
+| r1beta5 | ✅ (rsync,scp,nfs,sshfs,tar) |
 
 How the images are built:
 

@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/anyvm-org/haiku-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/haiku-builder/actions/workflows/build.yml)
 
-Latest: v2.0.3
+Latest: v2.0.2
 
 
 The image builder for `haiku`
@@ -14,7 +14,7 @@ All the supported releases are here:
 
 | Release | x86_64 |
 |---------|---------|
-| r1beta5 | ✅ (rsync,scp,nfs,sshfs,tar) |
+| r1beta6 | ✅ (rsync,scp,nfs,sshfs,tar) |
 
 How the images are built:
 
@@ -43,6 +43,6 @@ How to build:
 
     Just clone the repo. and run:
     ```bash
-    python3 build.py conf/haiku-r1beta5.conf
+    python3 build.py conf/haiku-r1beta6.conf
     ```
    

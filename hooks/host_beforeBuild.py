@@ -17,7 +17,7 @@ import os
 import urllib.request
 import urllib.error
 
-_RELEASE = os.environ.get("VM_RELEASE", "r1beta5")
+_RELEASE = os.environ.get("VM_RELEASE", "r1beta6")
 _ISO = "haiku-%s-x86_64-anyboot.iso" % _RELEASE
 
 # Mirror roots, each joined with the release and the iso name. Order is the

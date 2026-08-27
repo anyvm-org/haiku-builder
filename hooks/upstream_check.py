@@ -20,10 +20,13 @@
 #   GET https://www.haiku-os.org/get-haiku/  ->  HTTP/2 302
 #   location: /get-haiku/r1beta5/
 #   (the target then answers HTTP/2 200 for /get-haiku/r1beta5/)
+# Re-run 2026-08-25 after the R1/beta6 announcement: the hook printed
+# "r1beta6", i.e. the redirect had already moved on, which is the whole
+# point of reading the pointer rather than a mirror listing.
 # This Location header is the release tag in exactly the form
-# conf/haiku-r1beta5.conf uses for VM_RELEASE ("r1beta5"). The page itself
+# conf/haiku-r1beta6.conf uses for VM_RELEASE ("r1beta6"). The page itself
 # (https://www.haiku-os.org/get-haiku/release-notes/) also canonicalizes
-# to the same r1beta5 URL and carries no other release tag in its body, so
+# to the same release URL and carries no other release tag in its body, so
 # there is no separate historical-version list to scan on this site --
 # the redirect target IS the single newest version, by construction of
 # the site itself (it is Haiku's own "get the latest release" pointer).
@@ -40,7 +43,7 @@ TIMEOUT = 60
 USER_AGENT = "anyvm-org-upstream-watcher/1.0"
 
 # The redirect target is "/get-haiku/<tag>/"; the tag is always "r1..."
-# (r1alpha1..r1alpha4, r1beta1..r1beta5 at fetch time), matching the exact
+# (r1alpha1..r1alpha4, r1beta1..r1beta6 at fetch time), matching the exact
 # string conf/*.conf uses for VM_RELEASE.
 PATTERN = re.compile(r'^/get-haiku/(r1[\w.]*)/$')
 

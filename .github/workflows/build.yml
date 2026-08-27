@@ -53,7 +53,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["r1beta5"]
+        os: ["r1beta6"]
     runs-on: ubuntu-24.04
     steps:
 #    - name: Free Disk Space (Ubuntu)
